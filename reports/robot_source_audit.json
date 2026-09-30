@@ -1,0 +1,651 @@
+{
+  "source": "/home/lh/VLA/galaxea_isaac_tutorial/object/r1pro/r1pro.usda",
+  "meters_per_unit": 0.01,
+  "has_authored_units": false,
+  "default_prim": "/Root",
+  "bodies": [
+    {
+      "path": "/Root/r1_pro_with_gripper/base_link",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/steer_motor_link1",
+      "position": [
+        0.1689700037240982,
+        0.2800000011920929,
+        0.15764999389648438
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/wheel_motor_link1",
+      "position": [
+        0.1689700037240982,
+        0.2800000011920929,
+        0.06999999284744263
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/steer_motor_link2",
+      "position": [
+        0.1689700037240982,
+        -0.2800000011920929,
+        0.15764999389648438
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/wheel_motor_link2",
+      "position": [
+        0.1689700037240982,
+        -0.2800000011920929,
+        0.06999999284744263
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/steer_motor_link3",
+      "position": [
+        -0.3270300030708313,
+        0.0,
+        0.15764999389648438
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/wheel_motor_link3",
+      "position": [
+        -0.3270300030708313,
+        0.0,
+        0.06999999284744263
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link1",
+      "position": [
+        -0.07903199642896652,
+        0.0,
+        0.34264999628067017
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link2",
+      "position": [
+        -0.07903199642896652,
+        0.0,
+        0.742650032043457
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link3",
+      "position": [
+        -0.07903199642896652,
+        0.0001005000012810342,
+        1.0426499843597412
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link4",
+      "position": [
+        -0.07903199642896652,
+        3.500026650726795e-07,
+        1.1422699689865112
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_base_link",
+      "position": [
+        -0.07951817661523819,
+        0.09723435342311859,
+        1.445289969444275
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link1",
+      "position": [
+        -0.07951817661523819,
+        0.17073434591293335,
+        1.445289969444275
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link2",
+      "position": [
+        -0.054506175220012665,
+        0.2519993484020233,
+        1.445289969444275
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link3",
+      "position": [
+        -0.07951817661523819,
+        0.2519993484020233,
+        1.3297899961471558
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link4",
+      "position": [
+        -0.07951817661523819,
+        0.2870643436908722,
+        1.1352900266647339
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link5",
+      "position": [
+        -0.07951817661523819,
+        0.2519993484020233,
+        1.0402899980545044
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link6",
+      "position": [
+        -0.07951817661523819,
+        0.22399935126304626,
+        0.877240002155304
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link7",
+      "position": [
+        -0.050018176436424255,
+        0.2519993484020233,
+        0.877240002155304
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_gripper_link",
+      "position": [
+        -0.07951817661523819,
+        0.2519993484020233,
+        0.7165899872779846
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_gripper_finger_link1",
+      "position": [
+        -0.07960688322782516,
+        0.2654523551464081,
+        0.6797000169754028
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_gripper_finger_link2",
+      "position": [
+        -0.07942912727594376,
+        0.23854634165763855,
+        0.6797000169754028
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_realsense_link",
+      "position": [
+        -0.029008176177740097,
+        0.2548927366733551,
+        0.7217217087745667
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_base_link",
+      "position": [
+        -0.07951905578374863,
+        -0.09723564982414246,
+        1.445289969444275
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link1",
+      "position": [
+        -0.07951905578374863,
+        -0.1707356572151184,
+        1.445289969444275
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link2",
+      "position": [
+        -0.055531054735183716,
+        -0.2520006597042084,
+        1.445289969444275
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link3",
+      "position": [
+        -0.07951905578374863,
+        -0.2520006597042084,
+        1.3297899961471558
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link4",
+      "position": [
+        -0.07951905578374863,
+        -0.2169426679611206,
+        1.1352900266647339
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link5",
+      "position": [
+        -0.07951905578374863,
+        -0.2520006597042084,
+        1.0402899980545044
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link6",
+      "position": [
+        -0.07951905578374863,
+        -0.22399966418743134,
+        0.877240002155304
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link7",
+      "position": [
+        -0.05001905560493469,
+        -0.2520006597042084,
+        0.877240002155304
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_gripper_link",
+      "position": [
+        -0.07951905578374863,
+        -0.2520006597042084,
+        0.7165899872779846
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_gripper_finger_link1",
+      "position": [
+        -0.0796077623963356,
+        -0.2385476529598236,
+        0.6797000169754028
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_gripper_finger_link2",
+      "position": [
+        -0.0794300064444542,
+        -0.26545366644859314,
+        0.6797000169754028
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_realsense_link",
+      "position": [
+        -0.029009055346250534,
+        -0.2491072565317154,
+        0.7217217087745667
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/zed_link",
+      "position": [
+        -0.013520993292331696,
+        0.06000335142016411,
+        1.6182500123977661
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "path": "/Root/r1_pro_with_gripper/base_link/steer_motor_joint1",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/base_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/steer_motor_link1"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/base_link/steer_motor_joint2",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/base_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/steer_motor_link2"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/base_link/steer_motor_joint3",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/base_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/steer_motor_link3"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/base_link/torso_joint1",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/base_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/torso_link1"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/steer_motor_link1/wheel_motor_joint1",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/steer_motor_link1"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/wheel_motor_link1"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/steer_motor_link2/wheel_motor_joint2",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/steer_motor_link2"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/wheel_motor_link2"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/steer_motor_link3/wheel_motor_joint3",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/steer_motor_link3"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/wheel_motor_link3"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link1/torso_joint2",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/torso_link1"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/torso_link2"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link2/torso_joint3",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/torso_link2"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/torso_link3"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link3/torso_joint4",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/torso_link3"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/torso_link4"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link4/left_arm_base_joint",
+      "type": "PhysicsFixedJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/torso_link4"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_base_link"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link4/right_arm_base_joint",
+      "type": "PhysicsFixedJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/torso_link4"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_base_link"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/torso_link4/zed_joint",
+      "type": "PhysicsFixedJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/torso_link4"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/zed_link"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_base_link/left_arm_joint1",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_base_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_link1"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link1/left_arm_joint2",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_link1"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_link2"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link2/left_arm_joint3",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_link2"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_link3"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link3/left_arm_joint4",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_link3"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_link4"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link4/left_arm_joint5",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_link4"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_link5"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link5/left_arm_joint6",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_link5"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_link6"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link6/left_arm_joint7",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_link6"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_arm_link7"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_arm_link7/left_gripper_joint",
+      "type": "PhysicsFixedJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_arm_link7"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_gripper_link"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_gripper_link/left_gripper_finger_joint1",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_gripper_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_gripper_finger_link1"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_gripper_link/left_gripper_finger_joint2",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_gripper_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_gripper_finger_link2"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/left_gripper_link/left_realsense_joint",
+      "type": "PhysicsFixedJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/left_gripper_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/left_realsense_link"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_base_link/right_arm_joint1",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_base_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_link1"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link1/right_arm_joint2",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_link1"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_link2"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link2/right_arm_joint3",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_link2"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_link3"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link3/right_arm_joint4",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_link3"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_link4"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link4/right_arm_joint5",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_link4"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_link5"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link5/right_arm_joint6",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_link5"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_link6"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link6/right_arm_joint7",
+      "type": "PhysicsRevoluteJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_link6"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_arm_link7"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_arm_link7/right_gripper_joint",
+      "type": "PhysicsFixedJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_arm_link7"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_gripper_link"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_gripper_link/right_gripper_finger_joint1",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_gripper_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_gripper_finger_link1"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_gripper_link/right_gripper_finger_joint2",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_gripper_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_gripper_finger_link2"
+      ]
+    },
+    {
+      "path": "/Root/r1_pro_with_gripper/right_gripper_link/right_realsense_joint",
+      "type": "PhysicsFixedJoint",
+      "body0": [
+        "/Root/r1_pro_with_gripper/right_gripper_link"
+      ],
+      "body1": [
+        "/Root/r1_pro_with_gripper/right_realsense_link"
+      ]
+    }
+  ],
+  "articulation_roots": [
+    "/Root/r1_pro_with_gripper/base_link"
+  ]
+}

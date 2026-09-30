@@ -1,0 +1,6 @@
+{
+  "status": "blocked",
+  "reason": "Isaac Sim is not installed in this interpreter",
+  "python": "/home/lh/VLA/R1Pro-Market-Isaac/.venv/bin/python",
+  "physics_simulated": false
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "name": "GalaxeaManipSim",
+      "url": "https://github.com/OpenGalaxea/GalaxeaManipSim.git",
+      "commit": "abe7f5161eeaa150e6eaffdf443af5df7f23f356",
+      "relative_path": "../GalaxeaManipSim",
+      "role": "robot configuration and scripted-expert reference (SAPIEN; not runtime)",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
+    },
+    {
+      "name": "RoboTwin",
+      "url": "https://github.com/RoboTwin-Platform/RoboTwin.git",
+      "commit": "ea8b21121ebb3cd201ff5b3fe361944ac94eda3f",
+      "relative_path": "../RoboTwin",
+      "role": "task and annotation reference (SAPIEN; not runtime)",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
+    },
+    {
+      "name": "galaxea_isaac_tutorial",
+      "url": "https://cnb.cool/open_source/galaxea_isaac_tutorial.git",
+      "commit": "ccb2aeea2b0d396f0165c5b05bf2cc96d1472d4e",
+      "relative_path": "../galaxea_isaac_tutorial",
+      "role": "official R1 Pro USD, URDF, RMPflow examples",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
+    },
+    {
+      "name": "curobo",
+      "url": "https://github.com/NVlabs/curobo.git",
+      "commit": "d64c4b005459db10c5dd867d8b30a87d5bda9bdb",
+      "relative_path": "../curobo",
+      "role": "planned motion-generation backend; v1 API",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
+    },
+    {
+      "name": "IsaacLab",
+      "url": "https://github.com/isaac-sim/IsaacLab.git",
+      "commit": "21f7136325136ca3f6ca4e0a8125edffe5c24f7e",
+      "relative_path": "../IsaacLab",
+      "role": "optional environment/recording framework for Isaac Sim 4.5",
+      "lfs_pointer_count": 2,
+      "lfs_pointer_examples": [
+        "docs/source/_static/setup/cloudxr_bimanual_teleop.gif",
+        "docs/source/_static/tasks/manipulation/gr-1_pick_place.gif"
+      ]
+    },
+    {
+      "name": "lerobot",
+      "url": "https://github.com/huggingface/lerobot.git",
+      "commit": "a5e0aae13a3efd0080ac7ab6b461980d644014ab",
+      "relative_path": "../lerobot",
+      "role": "future dataset exporter; pinned to GalaxeaManipSim documented commit",
+      "lfs_pointer_count": 45,
+      "lfs_pointer_examples": [
+        "tests/artifacts/policies/aloha_sim_insertion_human_act_/actions.safetensors",
+        "tests/artifacts/policies/aloha_sim_insertion_human_act_/param_stats.safetensors",
+        "tests/artifacts/policies/aloha_sim_insertion_human_act_/output_dict.safetensors",
+        "tests/artifacts/policies/aloha_sim_insertion_human_act_/grad_stats.safetensors",
+        "tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/actions.safetensors",
+        "tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/param_stats.safetensors",
+        "tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/output_dict.safetensors",
+        "tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/grad_stats.safetensors"
+      ]
+    },
+    {
+      "name": "GalaxeaVLA",
+      "url": "https://github.com/OpenGalaxea/GalaxeaVLA.git",
+      "commit": "89f2322b4ad016e192437adc1a2c253b05bab246",
+      "relative_path": "../GalaxeaVLA",
+      "role": "policy integration reference; separate training environment",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
+    }
+  ],
+  "local_references": [
+    "../RoboBenchMart-main",
+    "../GalaxeaVLA-main"
+  ],
+  "asset_sources": [
+    {
+      "name": "MarketGen",
+      "url": "https://huggingface.co/datasets/HXX/MarketGen",
+      "status": "not_downloaded",
+      "reason": "Dataset assets, not a source-code dependency; select a scene before downloading"
+    }
+  ],
+  "runtime": {
+    "target": "Isaac Sim 4.5.0",
+    "isaaclab_tag": "v2.1.0",
+    "physics_validation": "pending_runtime",
+    "asset_dev_python": "3.10",
+    "asset_dev_usd_core": "25.5",
+    "notes": "Do not install asset venv usd-core into Isaac Python; simulator supplies its own USD."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "milestone": "M1 asset structure completed; physics pending",
+  "completed": [
+    "seven source checkouts with commit lock",
+    "isolated asset venv",
+    "official R1 Pro USD inspected",
+    "hollow basket builder",
+    "fixed-joint robot assembly",
+    "candidate task schema and generator",
+    "asset/task unit tests"
+  ],
+  "not_completed": [
+    "Isaac runtime startup",
+    "basket physics",
+    "dual-arm reachability",
+    "grasp expert",
+    "MarketGen asset integration",
+    "synchronized camera/action recorder",
+    "LeRobot export",
+    "VLA training/evaluation"
+  ],
+  "blocker": "No Isaac Sim installation located in common paths; installation path question is pending.",
+  "upstream_repositories_modified": false,
+  "note": "LeRobot checkout intentionally pinned to documented commit; source contents unmodified."
+}

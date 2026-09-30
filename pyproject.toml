@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "r1pro-market-isaac"
+version = "0.1.0"
+description = "R1 Pro local supermarket manipulation data pipeline for Isaac Sim"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+asset = ["usd-core==25.5", "numpy==1.26.4"]
+test = ["pytest==8.3.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

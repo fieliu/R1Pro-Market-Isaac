@@ -1,0 +1,38 @@
+{
+  "source_usd": "../galaxea_isaac_tutorial/object/r1pro/r1pro.usda",
+  "articulation_relative_path": "r1_pro_with_gripper/base_link",
+  "left_arm_joints": [
+    "left_arm_joint1",
+    "left_arm_joint2",
+    "left_arm_joint3",
+    "left_arm_joint4",
+    "left_arm_joint5",
+    "left_arm_joint6",
+    "left_arm_joint7"
+  ],
+  "right_arm_joints": [
+    "right_arm_joint1",
+    "right_arm_joint2",
+    "right_arm_joint3",
+    "right_arm_joint4",
+    "right_arm_joint5",
+    "right_arm_joint6",
+    "right_arm_joint7"
+  ],
+  "left_gripper_joints": [
+    "left_gripper_finger_joint1",
+    "left_gripper_finger_joint2"
+  ],
+  "right_gripper_joints": [
+    "right_gripper_finger_joint1",
+    "right_gripper_finger_joint2"
+  ],
+  "torso_joints": [
+    "torso_joint1",
+    "torso_joint2",
+    "torso_joint3",
+    "torso_joint4"
+  ],
+  "motion_validation": "pending_isaac_runtime",
+  "assets_units": "meters (official example uses World(stage_units_in_meters=1.0))"
+}

@@ -1,0 +1,61 @@
+{
+  "scene_id": "synthetic_shelf_001",
+  "layout_family": "synthetic_shelf_family",
+  "split": "train",
+  "skills": [
+    "shelf_to_basket",
+    "basket_to_shelf"
+  ],
+  "objects": [
+    {
+      "id": "test_box",
+      "description": "test box",
+      "size_xyz_m": [
+        0.04,
+        0.04,
+        0.08
+      ]
+    }
+  ],
+  "regions": {
+    "shelf": {
+      "frame": "shelf_level_1",
+      "min_xyz_m": [
+        -0.1,
+        -0.2,
+        0
+      ],
+      "max_xyz_m": [
+        0.1,
+        0.2,
+        0.2
+      ]
+    },
+    "basket": {
+      "frame": "basket_floor",
+      "min_xyz_m": [
+        -0.1,
+        -0.15,
+        0
+      ],
+      "max_xyz_m": [
+        0.1,
+        0.15,
+        0.12
+      ]
+    }
+  },
+  "robot_reset": {
+    "base_pose_wxyz": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "joint_preset": "neutral"
+  },
+  "initial_scene_snapshot": "EXAMPLE_ONLY_NO_SIMULATOR_SCENE"
+}

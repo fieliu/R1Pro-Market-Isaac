@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "inner_size_xyz_m": [
+    0.25,
+    0.35,
+    0.12
+  ],
+  "wall_thickness_m": 0.01,
+  "mass_kg": 1.5,
+  "static_friction": 0.7,
+  "dynamic_friction": 0.6,
+  "mount_link": "r1_pro_with_gripper/base_link",
+  "position_in_mount_m": [
+    0.45,
+    0,
+    0.65
+  ],
+  "orientation_wxyz": [
+    1,
+    0,
+    0,
+    0
+  ],
+  "support_height_m": 0.3,
+  "placement_margin_m": 0.025,
+  "calibration_status": "candidate_unverified"
+}
