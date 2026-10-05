@@ -1,6 +1,6 @@
 # R1 Pro 商超局部操作采集（Isaac Sim）
 
-当前阶段：源码依赖和第一个资产里程碑已落地。**尚未完成 Isaac 物理验证、抓取专家、图像采集或 VLA 训练数据导出。**
+当前阶段：源码依赖、第一个资产里程碑和 InternDataEngine 外部适配骨架已落地。**尚未完成 Isaac 物理验证、抓取专家、图像采集或 VLA 训练数据导出。**
 
 目标是导航到站后执行 `货架→篮子`、`篮子→货架`、`篮子→冰柜`、`篮子→收货点`。不在本项目训练长程导航。
 
@@ -17,6 +17,7 @@
 - Isaac 的 Python 与资产开发环境分开：**不要将本项目 usd-core wheel 装入 Isaac Python**，Isaac 自带 USD/PhysX。
 - 克隆未递归下载子模块和 LFS 大文件。未下载的 LFS 指针数量已写入锁文件（目前为文档媒体/LeRobot 测试数据）；R1 Pro 官方 USD 是完整文件。
 - MarketGen 是数据资产，不是已确认公开的生成器代码；完整商超数据尚未下载。
+- InternDataEngine 是主数据生成编排层；GenManip、InternUtopia 和 RoboTwin 当前只作为明确边界的参考依赖。
 
 PowerShell 用户先进入 WSL：
 
@@ -29,6 +30,7 @@ wsl -d Ubuntu-22.04
 ```bash
 cd /home/lh/VLA/R1Pro-Market-Isaac
 .venv/bin/python scripts/preflight.py
+.venv/bin/python scripts/preflight_interndata.py
 .venv/bin/python -m pytest -q
 ```
 
@@ -42,6 +44,7 @@ cd /home/lh/VLA/R1Pro-Market-Isaac
 6. `scripts/smoke_isaac.py`：待运行的物理检查：局部任务固定底座、保持关节、测试方块落入篮子。**不是抓取演示。**
 7. `scripts/generate_tasks.py`：候选任务元数据生成。示例场景只是配置示例，不是已构建的商超或训练数据。
 8. 测试覆盖空腔、局部/世界安装变换、源文件不被修改、参数验证、任务可重复性和布局家族划分泄漏。
+9. InternDataEngine 清单和外部插件实现 R1 Pro 双臂/双指夹爪接入骨架；未知标定值会阻止生成运行配置。
 
 安装位置是候选值 `[0.45, 0, 0.65]` 米（相对于官方底座连杆），尚未确认双臂可达、动态碰撞、真实机械结构承载。两根柱仅用于初步仿真外形，不是获厂商认可的安装方案。
 
@@ -93,6 +96,7 @@ bash scripts/run_isaac.sh --gui
 - M0 已完成：依赖克隆、版本记录、开发环境。
 - M1 已完成结构部分：篮子生成、机器人组合、CPU/USD 测试。
 - M1 待完成运行部分：Isaac 启动、持姿/落物、双臂可达、抓放验证。
+- M1.5 已完成静态部分：InternDataEngine 插件、URDF/USD 合同检查、按名称解析 DOF；运行标定仍待 Isaac 4.5。
 - M2：接入一个 MarketGen 局部货架，建立商品/支撑面/入口/目标区域标注。
 - M3：同步规划碰撞世界，实现货架→篮子的专家；考虑持物体积和夹爪接触。
 - M4：记录 `obs_t → action_t → obs_(t+1)`，同步真实头部/左右腕图像；恢复初始状态回放。
@@ -110,6 +114,9 @@ bash scripts/run_isaac.sh --gui
 - https://github.com/isaac-sim/IsaacLab
 - https://github.com/huggingface/lerobot
 - https://github.com/OpenGalaxea/GalaxeaVLA
+- https://github.com/InternRobotics/InternDataEngine
+- https://github.com/InternRobotics/GenManip
+- https://github.com/InternRobotics/InternUtopia
 - https://huggingface.co/datasets/HXX/MarketGen
 
 上游代码和模型保留原有许可。当前项目通过引用使用资产，没有给上游资产重新授予许可。

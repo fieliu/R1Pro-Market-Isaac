@@ -75,6 +75,33 @@
       "role": "policy integration reference; separate training environment",
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
+    },
+    {
+      "name": "InternDataEngine",
+      "url": "https://github.com/InternRobotics/InternDataEngine.git",
+      "commit": "2a0a21f2c836df97c925729084e13d68950b4deb",
+      "relative_path": "../InternDataEngine",
+      "role": "primary Isaac data-generation workflow (load, plan, render, store)",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
+    },
+    {
+      "name": "GenManip",
+      "url": "https://github.com/InternRobotics/GenManip.git",
+      "commit": "1958e3781e4fb1921d1834b658b295e3660899ab",
+      "relative_path": "../GenManip",
+      "role": "task and language-generation reference; not the R1 Pro runtime",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
+    },
+    {
+      "name": "InternUtopia",
+      "url": "https://github.com/InternRobotics/InternUtopia.git",
+      "commit": "b0a9520c586317c2743023c153cbf7c4f04f4732",
+      "relative_path": "../InternUtopia",
+      "role": "GRScenes and Isaac scene-loading reference; optional runtime",
+      "lfs_pointer_count": 0,
+      "lfs_pointer_examples": []
     }
   ],
   "local_references": [
@@ -95,6 +122,6 @@
     "physics_validation": "pending_runtime",
     "asset_dev_python": "3.10",
     "asset_dev_usd_core": "25.5",
-    "notes": "Do not install asset venv usd-core into Isaac Python; simulator supplies its own USD."
+    "notes": "InternDataEngine is the primary orchestration target. Do not install asset venv usd-core into Isaac Python; simulator supplies its own USD."
   }
 }

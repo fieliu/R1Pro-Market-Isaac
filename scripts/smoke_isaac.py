@@ -102,7 +102,7 @@ def main():
         speed=float(np.linalg.norm(probe.get_linear_velocity()))
         stable=inside and speed < 0.05 and max_drift < 0.01
         report.update(status="passed" if stable else "failed",physics_simulated=True,
-                      completed_steps=completed,joint_names=list(robot.dof_names),
+                      completed_steps=completed,dof_names=list(robot.dof_names),
                       basket_max_drift_m=max_drift,probe_local_position_m=local.tolist(),
                       probe_speed_m_s=speed,probe_inside=inside,
                       grasp_validated=False,reachability_validated=False)

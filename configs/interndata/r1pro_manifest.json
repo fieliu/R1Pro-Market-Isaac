@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "target_class": "R1ProMarket",
+  "asset": {
+    "project_usd": "assets/generated/r1pro_with_basket.usda",
+    "official_urdf": "../galaxea_isaac_tutorial/object/r1pro/r1_pro_with_gripper.urdf",
+    "articulation_relative_path": "R1Pro/r1_pro_with_gripper/base_link"
+  },
+  "arms": {
+    "left": {
+      "joint_names": [
+        "left_arm_joint1",
+        "left_arm_joint2",
+        "left_arm_joint3",
+        "left_arm_joint4",
+        "left_arm_joint5",
+        "left_arm_joint6",
+        "left_arm_joint7"
+      ],
+      "gripper_joint_names": [
+        "left_gripper_finger_joint1",
+        "left_gripper_finger_joint2"
+      ],
+      "base_link": "R1Pro/r1_pro_with_gripper/left_arm_base_link",
+      "ee_link": "R1Pro/r1_pro_with_gripper/left_gripper_link",
+      "camera_link": "R1Pro/r1_pro_with_gripper/left_realsense_link"
+    },
+    "right": {
+      "joint_names": [
+        "right_arm_joint1",
+        "right_arm_joint2",
+        "right_arm_joint3",
+        "right_arm_joint4",
+        "right_arm_joint5",
+        "right_arm_joint6",
+        "right_arm_joint7"
+      ],
+      "gripper_joint_names": [
+        "right_gripper_finger_joint1",
+        "right_gripper_finger_joint2"
+      ],
+      "base_link": "R1Pro/r1_pro_with_gripper/right_arm_base_link",
+      "ee_link": "R1Pro/r1_pro_with_gripper/right_gripper_link",
+      "camera_link": "R1Pro/r1_pro_with_gripper/right_realsense_link"
+    }
+  },
+  "gripper": {
+    "min_width_m": 0.0,
+    "max_width_m": 0.1,
+    "open_joint_targets_m": [0.05, -0.05],
+    "closed_joint_targets_m": [0.0, 0.0],
+    "source": "official URDF joint limits"
+  },
+  "calibration": {
+    "left_curobo_config": null,
+    "right_curobo_config": null,
+    "tcp_offset_m": null,
+    "left_gripper_keypoints": null,
+    "right_gripper_keypoints": null,
+    "left_filter_paths": null,
+    "right_filter_paths": null,
+    "left_forbid_collision_paths": null,
+    "right_forbid_collision_paths": null,
+    "R_ee_graspnet": null,
+    "ee_axis": null,
+    "left_joint_home": [0.0001, -0.0001, -0.0001, 0.0, 0.0, 0.0001, 0.0002],
+    "right_joint_home": [0.0001, -0.0001, -0.0001, 0.0, -0.0001, 0.0002, 0.0002]
+  },
+  "provenance": {
+    "joint_homes": "../galaxea_isaac_tutorial/config/r1pro_rmpflow/r1pro_cumotion.XRDF",
+    "status": "static paths verified; Isaac articulation order and grasp calibration pending"
+  }
+}
