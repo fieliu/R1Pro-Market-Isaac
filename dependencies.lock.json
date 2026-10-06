@@ -7,6 +7,7 @@
       "commit": "abe7f5161eeaa150e6eaffdf443af5df7f23f356",
       "relative_path": "../GalaxeaManipSim",
       "role": "robot configuration and scripted-expert reference (SAPIEN; not runtime)",
+      "required_for_interndata": false,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     },
@@ -16,6 +17,7 @@
       "commit": "ea8b21121ebb3cd201ff5b3fe361944ac94eda3f",
       "relative_path": "../RoboTwin",
       "role": "task and annotation reference (SAPIEN; not runtime)",
+      "required_for_interndata": false,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     },
@@ -25,6 +27,7 @@
       "commit": "ccb2aeea2b0d396f0165c5b05bf2cc96d1472d4e",
       "relative_path": "../galaxea_isaac_tutorial",
       "role": "official R1 Pro USD, URDF, RMPflow examples",
+      "required_for_interndata": true,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     },
@@ -34,6 +37,7 @@
       "commit": "d64c4b005459db10c5dd867d8b30a87d5bda9bdb",
       "relative_path": "../curobo",
       "role": "planned motion-generation backend; v1 API",
+      "required_for_interndata": true,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     },
@@ -43,6 +47,7 @@
       "commit": "21f7136325136ca3f6ca4e0a8125edffe5c24f7e",
       "relative_path": "../IsaacLab",
       "role": "optional environment/recording framework for Isaac Sim 4.5",
+      "required_for_interndata": false,
       "lfs_pointer_count": 2,
       "lfs_pointer_examples": [
         "docs/source/_static/setup/cloudxr_bimanual_teleop.gif",
@@ -55,6 +60,7 @@
       "commit": "a5e0aae13a3efd0080ac7ab6b461980d644014ab",
       "relative_path": "../lerobot",
       "role": "future dataset exporter; pinned to GalaxeaManipSim documented commit",
+      "required_for_interndata": false,
       "lfs_pointer_count": 45,
       "lfs_pointer_examples": [
         "tests/artifacts/policies/aloha_sim_insertion_human_act_/actions.safetensors",
@@ -73,6 +79,7 @@
       "commit": "89f2322b4ad016e192437adc1a2c253b05bab246",
       "relative_path": "../GalaxeaVLA",
       "role": "policy integration reference; separate training environment",
+      "required_for_interndata": false,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     },
@@ -82,6 +89,7 @@
       "commit": "2a0a21f2c836df97c925729084e13d68950b4deb",
       "relative_path": "../InternDataEngine",
       "role": "primary Isaac data-generation workflow (load, plan, render, store)",
+      "required_for_interndata": true,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     },
@@ -91,6 +99,7 @@
       "commit": "1958e3781e4fb1921d1834b658b295e3660899ab",
       "relative_path": "../GenManip",
       "role": "task and language-generation reference; not the R1 Pro runtime",
+      "required_for_interndata": false,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     },
@@ -100,6 +109,7 @@
       "commit": "b0a9520c586317c2743023c153cbf7c4f04f4732",
       "relative_path": "../InternUtopia",
       "role": "GRScenes and Isaac scene-loading reference; optional runtime",
+      "required_for_interndata": false,
       "lfs_pointer_count": 0,
       "lfs_pointer_examples": []
     }

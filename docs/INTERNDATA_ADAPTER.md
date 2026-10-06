@@ -11,6 +11,7 @@ Python 环境，也不把 SAPIEN 控制器直接迁入 Isaac。
 - src/r1pro_market/interndata_plugin.py 注册外部机器人和控制器，不修改上游仓库。
 - 插件处理组合 USD 的嵌套 articulation root，移动机器人时让篮子随整个组合层移动，并把每侧两个夹爪关节映射为开关动作。
 - scripts/preflight_interndata.py 检查依赖提交、URDF、USD 路径、Isaac 报告和未完成标定。
+- 预检只把官方机器人资产、cuRobo 和 InternDataEngine 视为首阶段硬依赖；其他参考仓库缺失时给出 warning。
 - scripts/generate_interndata_robot_config.py 只在物理 smoke 和标定均完成后生成引擎配置。
 
 ## 为什么现在仍显示 blocked

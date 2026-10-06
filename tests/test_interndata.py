@@ -72,6 +72,8 @@ def test_locked_engine_repositories_are_recorded():
     assert commits["InternDataEngine"] == "2a0a21f2c836df97c925729084e13d68950b4deb"
     assert commits["GenManip"] == "1958e3781e4fb1921d1834b658b295e3660899ab"
     assert commits["InternUtopia"] == "b0a9520c586317c2743023c153cbf7c4f04f4732"
+    required = {item["name"] for item in lock["repositories"] if item["required_for_interndata"]}
+    assert required == {"galaxea_isaac_tutorial", "curobo", "InternDataEngine"}
 
 
 def test_manifest_rejects_invented_gripper_targets():

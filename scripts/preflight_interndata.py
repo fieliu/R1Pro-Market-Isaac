@@ -42,18 +42,25 @@ def main() -> int:
 
     lock = json.loads((ROOT / "dependencies.lock.json").read_text(encoding="utf-8"))
     dependencies = []
+    warnings: list[str] = []
     for repo in lock["repositories"]:
         path = (ROOT / repo["relative_path"]).resolve()
         actual = git_head(path)
+        required = bool(repo.get("required_for_interndata", False))
         dependencies.append({
             "name": repo["name"],
             "path": str(path),
             "expected": repo["commit"],
             "actual": actual,
             "ok": actual == repo["commit"],
+            "required": required,
         })
         if actual != repo["commit"]:
-            errors.append(f"{repo['name']} checkout differs from dependencies.lock.json")
+            message = f"{repo['name']} checkout differs from dependencies.lock.json"
+            if required:
+                errors.append(message)
+            else:
+                warnings.append(message)
 
     runtime = {"physics_simulated": False, "joint_indices": None}
     if args.runtime_report.is_file():
@@ -71,6 +78,7 @@ def main() -> int:
     report = {
         "status": "error" if errors else ("ready" if not blockers else "blocked"),
         "errors": errors,
+        "warnings": warnings,
         "blockers": blockers,
         "dependencies": dependencies,
         "runtime": runtime,
